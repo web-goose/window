@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+  footer{
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer{
+    font-size: 7px;
+  }
+
+  footer .second hr{
+    color: #fff;
+    margin: 15px 30px;
+  }
+}
+
+@media (min-width: 768px) and(max-width: 991px) and (orientation: landscape) {
+  footer{
+    font-size: 7px;
+  }
+  footer .second hr{
+    color: #fff;
+    margin: 15px 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  footer .second hr{
+    color: #fff;
+    margin: 15px 60px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499) {
+
+}
+
+@media (min-width: 1500px) {
+
+}
