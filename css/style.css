@@ -382,7 +382,7 @@ header .header {
   border-radius: 5px;
 }
 
-.block8 form{
+.block8 form {
   margin-top: 30px;
 }
 
@@ -403,33 +403,38 @@ header .header {
   padding: 20px;
 }
 
+.block8 input{
+  padding: 15px;
+  color: #fff;
+}
+
 .block8 .button:hover {
   color: #000;
 }
 
-footer{
+footer {
   background-color: #3f3f3f;
 }
 
-footer .first p{
+footer .first p {
   font-size: 1.6em;
   font-family: 'Neo Sans Pro';
   font-weight: normal;
   font-style: normal;
-  color:#fff;
+  color: #fff;
   padding: 0;
   margin: 0;
 }
 
-footer .first a{
+footer .first a {
   font-size: 2em;
   font-family: 'Neo Sans Pro';
   font-weight: bold;
   text-decoration: underline;
-  color:#fff;
+  color: #fff;
 }
 
-footer .second .nav a{
+footer .second .nav a {
   color: #fff;
   text-decoration: none;
   font-size: 1.6em;
@@ -438,13 +443,12 @@ footer .second .nav a{
   font-style: normal;
 }
 
-footer .second hr{
+footer .second hr {
   color: #fff;
   margin: 15px 120px;
 }
 
-
-footer .second p{
+footer .second p {
   color: #fff;
   font-size: 1.4em;
   font-family: 'Neo Sans Pro';
@@ -452,20 +456,119 @@ footer .second p{
   font-style: normal;
 }
 
-footer .third h4
-{
+footer .third h4 {
   color: #fff;
   font-size: 1.6em;
   font-family: 'Neo Sans Pro';
   font-weight: 300;
 }
 
-footer .third p{
-    font-family: 'Neo Sans Pro Ultra';
-    font-size: 2em;
-    color: #fff;
+footer .third p {
+  font-family: 'Neo Sans Pro Ultra';
+  font-size: 2em;
+  color: #fff;
 }
 
-footer .third .soc img{
+footer .third .soc img {
   padding-left: 10px;
+}
+
+/* modal1 */
+
+#modal1 .modal-dialog{
+  max-width: 380px !important;
+}
+#modal1 .modal-header {
+  border: none;
+  height: 30px;
+}
+
+#modal1 .modal-body h2 {
+  font-size: 2.4em;
+}
+
+#modal1 .modal-body p {
+  font-size: 1.8em;
+}
+
+#modal1 .modal-body input {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-family: 'Neo Sans Pro';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.6em;
+  height: 55px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  width: 230px;
+  padding: 15px;
+}
+
+#modal1 .modal-body input::placeholder {
+  text-align: center;
+}
+
+#modal1 .modal-body button {
+  color: #fff;
+  border: none;
+  font-size: 1.7em;
+  font-weight: bold;
+  background-color: #D14230;
+  padding: 15px 40px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+#modal1 .modal-body button:hover {
+  color: #000;
+}
+
+/* modal2 */
+#modal2 .modal-header {
+  border: none;
+  height: 30px;
+}
+
+#modal2 .modal-body h2 {
+  font-size: 2.4em;
+}
+
+#modal2 .modal-body p {
+  font-size: 1.8em;
+}
+
+#modal2 .modal-body input {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-family: 'Neo Sans Pro';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.6em;
+  height: 45px;
+  border: 1px solid gray;
+  width: 200px;
+  padding: 15px;
+  margin: 15px 5px;
+}
+
+#modal2 .modal-body input::placeholder {
+  text-align: center;
+}
+
+#modal2 .modal-body button {
+  color: #fff;
+  border: none;
+  font-size: 1.7em;
+  font-weight: bold;
+  background-color: #D14230;
+  padding: 15px 40px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+#modal2 .modal-body button:hover {
+  color: #000;
 }
