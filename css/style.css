@@ -171,7 +171,9 @@ header .header {
   font-weight: 300;
 }
 
-.header .tel {
+.header .tel a{
+  text-decoration: none;
+  color:#Fff;
   font-size: 2.1em;
 }
 
@@ -199,6 +201,140 @@ header .header {
 
 .block2 .right img {
   height: 500px;
+}
+
+.block3 {
+  padding: 50px 0;
+  background-image: url('../img/block3/bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.block3 .kwiz h2 {
+  font-weight: bold;
+  margin: 20px 0;
+  text-transform: none;
+}
+
+.block3 .kwiz p {
+  font-size: 2em;
+  font-family: 'Neo Sans Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.block3 .kwiz .progress {
+  width: 40%;
+  margin: 10px 0;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #C0C2C3;
+}
+
+.block3 .kwiz .progress-bar {
+  background-color: #D14230;
+}
+
+.block3 .form-check{
+  padding-top: 40px
+}
+
+.block3 .form-check input[type="radio"]:checked,
+.block3 .form-check input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.block3 .form-check input[type="radio"]:checked + label,
+.block3 .form-check input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+.block3 .form-check input[type="radio"]:checked + label:before,
+.block3 .form-check input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #D14230;
+    border-radius: 100%;
+    background: #fff;
+}
+.block3 .form-check input[type="radio"]:checked + label:after,
+.block3 .form-check input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #D14230;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.block3 .form-check input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.block3 .form-check input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.block3 .form-check label{
+  font-size: 2em;
+  font-family: "Neo Sans Pro";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.block3 .button {
+  color: #fff;
+  border: none;
+  font-size: 1.7em;
+  font-weight: bold;
+  background-color: #D14230;
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+
+.block3 form {
+  margin-top: 30px;
+}
+
+.block3 form input[type="text"] {
+  margin-right: 15px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #3F3F3F;
+  font-family: 'Neo Sans Pro';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.6em;
+  height: 55px;
+}
+
+.block3 form input[type="text"]::placeholder {
+  color: #3F3F3F;
+  padding: 20px;
+}
+
+.block3 form input[type="text"] {
+  padding: 15px;
+  color: #3F3F3F;
+}
+
+.block3 form .button:hover {
+  color: #000;
 }
 
 .block4 .title {
@@ -287,7 +423,7 @@ header .header {
 .jcarousel img {
   display: block;
   max-width: 100%;
-  height: auto !important;
+  height: 450px !important;
 }
 
 /** Carousel Controls **/
@@ -403,7 +539,7 @@ header .header {
   padding: 20px;
 }
 
-.block8 input{
+.block8 input {
   padding: 15px;
   color: #fff;
 }
@@ -463,10 +599,11 @@ footer .third h4 {
   font-weight: 300;
 }
 
-footer .third p {
+footer .third a{
   font-family: 'Neo Sans Pro Ultra';
   font-size: 2em;
   color: #fff;
+  text-decoration: none;
 }
 
 footer .third .soc img {
@@ -474,10 +611,10 @@ footer .third .soc img {
 }
 
 /* modal1 */
-
-#modal1 .modal-dialog{
+#modal1 .modal-dialog {
   max-width: 380px !important;
 }
+
 #modal1 .modal-header {
   border: none;
   height: 30px;
@@ -536,8 +673,9 @@ footer .third .soc img {
   font-size: 2.4em;
 }
 
-#modal2 .modal-body img{
+#modal2 .modal-body img {
   width: 100%;
+  height: 100%;
 }
 
 #modal2 .modal-body p {

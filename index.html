@@ -43,17 +43,18 @@
             <h4>Ежедневно с 8:00 до 20:00</h4>
           </div>
           <div class="tel font-weight-bold">
-            <p>+7 (917) 282-49-74</p>
+            <a href="tel:89172824974"><p>+7 (917) 282-49-74</p></a>
           </div>
-          <div class="soc"><img src="img/header/insta.png" alt="Instagram">
-            <img src="img/header/whatsup.png" alt="WhatsUp">
-            <img src="img/header/telegram.png" alt="Telegram"></div>
+          <div class="soc">
+            <a href="https://www.instagram.com/master_po_oknam/"><img src="img/header/insta.png" alt="Instagram"></a>
+            <a href="https://wa.me/79172824974"><img src="img/header/whatsup.png" alt="WhatsUp"></a>
+            <a href="tg://resolve?domain=Pashka_kzn"><img src="img/header/telegram.png" alt="Telegram"></a></div>
         </div>
       </div>
 
       <div class="row block1 d-flex align-items-center my-5">
         <div class="col-xl-6 col-lg-12 col-sm-12 text-center">
-          <div class="video"><iframe class="mt-5" width="500" height="315" src="https://www.youtube.com/embed/GmzWbgzo6B4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/kLfdf5YyRyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
         <div class="col-xl-6 col-lg-12 col-sm-12 text-xl-left text-sm-center text">
           <h1>Ремонт окон<br />
@@ -69,7 +70,7 @@
   <section class="block2">
     <div class="container pl-sm-5">
       <div class="row">
-        <div class="col-xl-4 col-lg-4 col-sm-6">
+        <div class="col-xl-4 col-lg-6 col-sm-6">
           <h2>Почему выгодно
             работать с нами</h2>
           <hr align="left" width="20%">
@@ -101,7 +102,42 @@
   </section>
 
   <section class="block3">
-    <div class="container"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12">
+          <h2>Ответьте на 5 вопросов чтобы узнать стоимость за 3 минуты</h2>
+          <hr align="left" width="20%">
+          <hr class="vertical">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="kwiz" id="kwiz">
+            <h2>Какой материал окон?</h2>
+            <p>Вопрос 1 из 4</p>
+            <div class="bar w-100 d-flex justify-content-center">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-check col-4">
+                <input type="radio" class="form-check-input" id="1" question="1" name="question" value="ПВХ">
+                <label class="form-check-label" for="1">ПВХ</label>
+              </div>
+              <div class="form-check col-4">
+                <input type="radio" class="form-check-input" id="2" question="1" name="question" value="Дерево">
+                <label class="form-check-label" for="2">Дерево</label>
+              </div>
+              <div class="form-check col-4">
+                <input type="radio" class="form-check-input" id="3" question="1" name="question" value="Алюминий">
+                <label class="form-check-label" for="3">Алюминий</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="block4">
@@ -229,6 +265,8 @@
                 <li><img src="img/block7/1.png" alt="Image 1"></li>
                 <li><img src="img/block7/2.png" alt="Image 2"></li>
                 <li><img src="img/block7/3.png" alt="Image 3"></li>
+                <li><img src="img/block7/4.jpg" alt="Image 4"></li>
+                <li><img src="img/block7/5.jpg" alt="Image 5"></li>
               </ul>
             </div>
             <a href="#" class="jcarousel-control-prev"><img src="img/block7/left-arrow.png" alt="влево"></a>
@@ -248,9 +286,9 @@
               <h2 class="text-white">Остались вопросы?</h2>
               <p class="text-white">Заполните форму и мы перезвоним вам в течении 5 минут</p>
               <form>
-                <input type="text" name="" placeholder="Ваше имя" required>
-                <input type="text" name="" placeholder="Ваш телефон" required>
-                <button class="button" type="submit">Отправить заявку</a>
+                <input type="text" id="block8_name" placeholder="Ваше имя">
+                <input type="text" id="block8_phone" placeholder="Ваш телефон*" required>
+                <button class="button" type="submit" onclick="Send_Request('#block8_name', '#block8_phone')">Отправить заявку</a>
               </form>
             </div>
           </div>
@@ -264,7 +302,7 @@
       <div class="row">
         <div class="col-xl-3 col-sm-3 first my-3">
           <p>Почта</p>
-          <a href="mailto:vash_email@mail.ru">vash_email@mail.ru</a>
+          <a href="mailto:agafonovpasha@gmail.com">agafonovpasha@gmail.com</a>
           <p class="my-4">Ежедневно с 8:00 до 20:00</p>
         </div>
         <div class="col-xl-6 col-sm-6 second">
@@ -290,11 +328,12 @@
             <h4>Эксперт по окнам</h4>
           </div>
           <div class="tel font-weight-bold text-white">
-            <p>+7 (917) 282-49-74</p>
+            <a href="tel:+79172824974"><p>+7 (917) 282-49-74</p></a>
           </div>
-          <div class="soc"><img src="img/header/insta.png" alt="Instagram">
-            <img src="img/header/whatsup.png" alt="WhatsUp">
-            <img src="img/header/telegram.png" alt="Telegram"></div>
+          <div class="soc">
+            <a href="https://www.instagram.com/master_po_oknam/"><img src="img/header/insta.png" alt="Instagram"></a>
+            <a href="https://wa.me/79172824974"><img src="img/header/whatsup.png" alt="WhatsUp"></a>
+            <a href="tg://resolve?domain=Pashka_kzn"><img src="img/header/telegram.png" alt="Telegram"></a></div></div>
         </div>
       </div>
     </div>
@@ -313,10 +352,10 @@
           <h2>Получить консультацию<br />эксперта</h2>
           <p>Заполните форму и мы<br />перезвоним
             вам в течении 5 минут</p>
-          <form>
-            <input type="text" name="" placeholder="Ваше имя"><br />
-            <input type="text" name="" required placeholder="Ваш телефон*"><br />
-            <button type="submit">Отправить заявку</button>
+          <form action="javascript:void(0);">
+            <input type="text" id="name" placeholder="Ваше имя"><br />
+            <input type="text" id="phone" required placeholder="Ваш телефон*"><br />
+            <button type="submit" onclick="Send_Request('#name', '#phone')">Отправить заявку</button>
           </form>
         </div>
       </div>
@@ -328,6 +367,21 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content" id="modal_more">
         <!-- content -->
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-md" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <h2>Заявка успешно отправлена</h2>
+        </div>
       </div>
     </div>
   </div>
