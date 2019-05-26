@@ -532,10 +532,16 @@ footer .third .soc img {
 }
 
 #modal2 .modal-body h2 {
+  margin-bottom: 10px;
   font-size: 2.4em;
 }
 
+#modal2 .modal-body img{
+  width: 100%;
+}
+
 #modal2 .modal-body p {
+  margin-top: 10px;
   font-size: 1.8em;
 }
 
