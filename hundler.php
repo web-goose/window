@@ -303,7 +303,7 @@ if ($_POST['kwiz_f'])
                     <div class="col-12">
           <form action="javascript:void(0);">
                     <div class="col-12 text-center">
-            <input type="text" id="question3" question="3" placeholder="В двух слова*" class="w-100" required></div>
+            <input type="text" id="question3" question="3" placeholder="В двух словах*" class="w-100" required></div>
                       <div class="col-12 text-center"><button class="button mt-4" type="submit" onclick="Next()">Далее</a></div>
           </form>
           </div></div>');
